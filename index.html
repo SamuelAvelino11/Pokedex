@@ -14,13 +14,14 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/modalPoke.css">
 </head>
 <body>
     
    <Section class="content">
 
         <h1>Pokedex</h1>
-
+        <p style="color: red;font-size: 10px;">Click no pokemon para mais informações</p>
         <ol id="pokemonList" class="pokemons">
 
             
@@ -32,21 +33,20 @@
             </button>
         </div>
         
+       <dialog id="corpo">
+
+            <div class="cl"> <button id="fechar">X</button></div>
+            <section id="modal">
+                
+            </section>
+       </dialog>
 
    </Section>
 
-   <div id="Modal" class="Modal">
-    <div class="acima">
-        <h3>info</h3>
-        <span>asdfasdjf</span>
-        <button class="btnClose" onclick="CloseModal()">close</button>
-    </div>
-    <div class="abaixo">
-
-    </div>
-</div>
-   <script src="assets/js/pokemon-model.js"></script>
+   
+    <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/poke-modal.js"></script>
 </body>
 </html>
